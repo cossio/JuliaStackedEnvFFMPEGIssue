@@ -11,3 +11,5 @@ julia --proj
 
 julia> import Makie
 ```
+
+The line `JULIA_LOAD_PATH=".:..:@stdlib"` ensures that the only environments on the stack are the one at `child_env/Project.toml` and the one at the root of this repo.
