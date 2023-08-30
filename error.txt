@@ -1,7 +1,5 @@
-
-julia> import Makie
-[ Info: Precompiling Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]
-ERROR: LoadError: InitError: could not load library "/Users/cossio/.julia/artifacts/bf37190b92ac2fc3dd5e7073ff7ec7bbfd10343f/lib/libavdevice.58.13.100.dylib"
+julia> import FFMPEG_jll
+ERROR: InitError: could not load library "/Users/cossio/.julia/artifacts/bf37190b92ac2fc3dd5e7073ff7ec7bbfd10343f/lib/libavdevice.58.13.100.dylib"
 dlopen(/Users/cossio/.julia/artifacts/bf37190b92ac2fc3dd5e7073ff7ec7bbfd10343f/lib/libavdevice.58.13.100.dylib, 0x0001): Library not loaded: @rpath/libssl.1.1.dylib
   Referenced from: <CB15E436-8C0A-3897-AEDE-C5935555F236> /Users/cossio/.julia/artifacts/bf37190b92ac2fc3dd5e7073ff7ec7bbfd10343f/lib/libavdevice.58.13.100.dylib
   Reason: tried: '/Users/cossio/.julia/artifacts/bf37190b92ac2fc3dd5e7073ff7ec7bbfd10343f/lib/./libssl.1.1.dylib' (no such file), '/Users/cossio/.julia/artifacts/bf37190b92ac2fc3dd5e7073ff7ec7bbfd10343f/lib/./libssl.1.1.dylib' (no such file), '/Users/cossio/.julia/juliaup/julia-1.9.3+0.aarch64.apple.darwin14/lib/julia/libssl.1.1.dylib' (no such file), '/Users/cossio/.julia/juliaup/julia-1.9.3+0.aarch64.apple.darwin14/lib/julia/../libssl.1.1.dylib' (no such file), '/Users/cossio/.julia/juliaup/julia-1.9.3+0.aarch64.apple.darwin14/lib/libssl.1.1.dylib' (no such file)
@@ -30,58 +28,4 @@ Stacktrace:
     @ ./lock.jl:267 [inlined]
  [12] require(into::Module, mod::Symbol)
     @ Base ./loading.jl:1611
- [13] include
-    @ ./Base.jl:457 [inlined]
- [14] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
-    @ Base ./loading.jl:2049
- [15] top-level scope
-    @ stdin:3
 during initialization of module FFMPEG_jll
-in expression starting at /Users/cossio/.julia/packages/FFMPEG/OUpap/src/FFMPEG.jl:1
-in expression starting at stdin:3
-ERROR: LoadError: Failed to precompile FFMPEG [c87230d0-a227-11e9-1b43-d7ebe4e7570a] to "/Users/cossio/.julia/compiled/v1.9/FFMPEG/jl_3t8p2S".
-Stacktrace:
-  [1] error(s::String)
-    @ Base ./error.jl:35
-  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool)
-    @ Base ./loading.jl:2300
-  [3] compilecache
-    @ ./loading.jl:2167 [inlined]
-  [4] _require(pkg::Base.PkgId, env::String)
-    @ Base ./loading.jl:1805
-  [5] _require_prelocked(uuidkey::Base.PkgId, env::String)
-    @ Base ./loading.jl:1660
-  [6] macro expansion
-    @ ./loading.jl:1648 [inlined]
-  [7] macro expansion
-    @ ./lock.jl:267 [inlined]
-  [8] require(into::Module, mod::Symbol)
-    @ Base ./loading.jl:1611
-  [9] include
-    @ ./Base.jl:457 [inlined]
- [10] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
-    @ Base ./loading.jl:2049
- [11] top-level scope
-    @ stdin:3
-in expression starting at /Users/cossio/.julia/packages/Makie/Ylh0P/src/Makie.jl:1
-in expression starting at stdin:3
-ERROR: Failed to precompile Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a] to "/Users/cossio/.julia/compiled/v1.9/Makie/jl_w5O1GJ".
-Stacktrace:
- [1] error(s::String)
-   @ Base ./error.jl:35
- [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool)
-   @ Base ./loading.jl:2300
- [3] compilecache
-   @ ./loading.jl:2167 [inlined]
- [4] _require(pkg::Base.PkgId, env::String)
-   @ Base ./loading.jl:1805
- [5] _require_prelocked(uuidkey::Base.PkgId, env::String)
-   @ Base ./loading.jl:1660
- [6] macro expansion
-   @ ./loading.jl:1648 [inlined]
- [7] macro expansion
-   @ ./lock.jl:267 [inlined]
- [8] require(into::Module, mod::Symbol)
-   @ Base ./loading.jl:1611
-
-julia> 
