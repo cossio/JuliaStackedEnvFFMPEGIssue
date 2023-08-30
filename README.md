@@ -9,7 +9,7 @@ julia --proj -e 'import Pkg; Pkg.instantiate()'
 export JULIA_LOAD_PATH=".:..:@stdlib"
 julia --proj
 
-julia> import Makie
+julia> import Makie # triggers error (see error.txt)
 ```
 
 The line `JULIA_LOAD_PATH=".:..:@stdlib"` ensures that the only environments on the stack are the one at `child_env/Project.toml` and the one at the root of this repo.
