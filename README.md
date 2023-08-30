@@ -1,4 +1,4 @@
-Example for https://github.com/MakieOrg/Makie.jl/issues/3123.
+Example for https://github.com/MakieOrg/Makie.jl/issues/3123, https://github.com/JuliaLang/julia/issues/51115.
 
 ```
 julia --proj -e 'import Pkg; Pkg.instantiate()'
